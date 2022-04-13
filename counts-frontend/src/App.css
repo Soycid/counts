@@ -1,18 +1,63 @@
+.image_container img {
+  max-height: 25em;
+}
 .App {
   text-align: center;
 }
-
+.box {
+  display: flex;
+  align-items: flex-start;
+  align-content: center | space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.heading-brand {
+  font-weight: 800;
+  font-size: 1.75rem;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.customCard {
+  background: #f9f9f9 !important;
+}
+.Blurb {
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  min-height: 12em;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
+.Header {
+  background-color: #a865ff;
+  display: flex;
+  min-height: 12em;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
+.Small-Header {
+  background-color: #ff6347;
+  display: flex;
+  min-height: 1em;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +80,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+.btn {
+  box-shadow: 0 4px 6px rgba($primary, 0.11), 0 1px 3px rgba($black, 0.08);
+
+  &:active,
+  &:focus,
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+.black_text {
+  color: #000000;
+}
+.white_text {
+  color: #ffffff;
+  font-size: calc(10px + 2vmin);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.right_justify {
+  text-align: right;
+  float: right;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  color: $black;
+  background: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+.form-control {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 1.5em;
 }

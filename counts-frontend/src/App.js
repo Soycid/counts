@@ -1,19 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React from "react";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Uploader from "./components/Uploader";
+import HeaderNav from "./components/HeaderNav";
+import Recieve from "./components/RecieveUpscale";
 
-//compontent that gives a calendar
-//
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-		deez nuts
-        </p>
-        
-      </header>
+      <BrowserRouter>
+        <HeaderNav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/uploader" element={<Uploader />} />
+          <Route path="/recieve" element={<Recieve />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

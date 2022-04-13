@@ -1,7 +1,11 @@
+DEFAULT_UNI = "columbia"
 
+def get_courses(school, department, uni = DEFAULT_UNI):
 
-def get_course(school, department, id, uni = "columbia",):
     return None
 
-def get_department(school, department, id, uni = "columbia", ):
+def get_departments(school, uni = DEFAULT_UNI):
+    return None
+
+def get_course_links(id, uni = DEFAULT_UNI):
     return None

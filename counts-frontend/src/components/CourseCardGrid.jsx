@@ -38,7 +38,6 @@ function CourseCardGrid() {
 		  	<CourseCard />
 		  	<CourseCard />
       </div>
-		  <br />
 <div class="box">
         <CourseCard />
         <CourseCard />

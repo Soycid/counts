@@ -9,6 +9,7 @@
   align-items: flex-start;
   align-content: center | space-between;
   gap: 10px;
+  margin-bottom: 10px;
 }
 .App-logo {
   height: 40vmin;

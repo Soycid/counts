@@ -6,6 +6,9 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavItem from "react-bootstrap/NavItem";
+
+
 import Container from "react-bootstrap/Container";
 
 const HeaderNav = () => (
@@ -15,10 +18,13 @@ const HeaderNav = () => (
         <Navbar.Brand href="https://github.com/ketanjog/graphiti">
           <div className="white_text">counts 📝 </div>
         </Navbar.Brand>
-        <div className="right-justify">
-          <Nav className="justify-content-end"></Nav>
-        </div>
-      </Container>
+        <Nav>
+	    <NavItem eventKey={1} href="#">
+		  Link
+		</NavItem>
+		
+		</Nav>
+		</Container>
     </Navbar>
   </div>
 );
